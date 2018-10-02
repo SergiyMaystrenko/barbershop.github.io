@@ -96,6 +96,7 @@
 	   		    	<label for="appointment-phone">Телефон</label>
 	   		    	<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+3 (8000) 000-00-00">
 	   		    </p>
+	   		    <button class="button" type="submit">Отправить</button>
 	   		</form>
 	   	</section>
 	   </main>
@@ -118,14 +119,33 @@
 	   
 	   <section class="model model-login">
 	   	<h2>Личный кабинет</h2>
-	   	<p>ВВедите пожалуйста свой логин и пароль</p>
-	   	<!-- Здесь будет форма -->
-	   	<span class="model-close">x</span>
+	   	<p>Введите пожалуйста свой логин и пароль</p>
+	   	<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+	   		<p>
+	   			<label class="visually-hidden" for="user-login">Логин</label>
+	   			<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+	   		</p>
+	   		<p>
+	   			<label class="visually-hidden" for="user-password">Пароль</label>
+	   			<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+	   		</p>
+	   		<p class="login-password-info">
+	   			<label class="login-checkbox">
+	   				<input class="visually-hidden" type="checkbox" name="remember">
+	   				<span class="checkbox-indicator"></span>
+	   				Запомните меня
+	   			</label>
+	   			<a class="restore" href="#">Я забыл пароль!</a>
+	   		</p>
+	   		<button class="button" type="submit">Войти</button>
+	   	</form>
+	   	<button class="model-close" type="button">Закрыть</button>
 	   </section>
 
 	   <section class="model model-map">
 	   	<h2 class="visually-hidden">Как до нас добраться</h2>
-	   	<span class="model-close">x</span>
+	   	<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8">
+	   	<button class="model-close" type="button">Закрыть</button>
 	   </section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</body>
